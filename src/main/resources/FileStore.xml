@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.springfileupload.app.model.FileStore">
+        <table name="file_store" schema="files" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="fileName">
+                <column name="file_name" length="30"/>
+            </basic>
+            <basic name="file">
+                <column name="file" precision="-1"/>
+            </basic>
+            <basic name="updatedDate">
+                <column name="updated_date" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
